@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/licznik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pytanie 1/10"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <ProgressBar
+            android:id="@+id/pasek"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:id="@+id/pytanie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu pytanie"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#D9D9D9"
+            android:textColor="#000000"
+            android:padding="10dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"
+            android:backgroundTint="#FFFACD">
+
+            <RadioGroup
+                android:id="@+id/odpowiedzi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FBF9F1"
+                android:padding="16dp">
+
+
+                <RadioButton
+                    android:id="@+id/answer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Odp 1"
+                    android:background="#D9D9D9"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/answer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Odp 2"
+                    android:background="#D9D9D9"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/answer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Odp 3"
+                    android:background="#D9D9D9"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <RadioButton
+                    android:id="@+id/answer4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Odp 4"
+                    android:background="#D9D9D9"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/przycisk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Następne"
+            android:layout_gravity="center_horizontal"
+            android:background="#DEE6C5"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+
